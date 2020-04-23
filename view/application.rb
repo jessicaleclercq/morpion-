@@ -1,3 +1,4 @@
+require 'pry'
 class Application
   def perform
     # Display a welcome message
@@ -31,9 +32,14 @@ class Application
     #Initialisation du game
     game = Game.new(player1, player2)
     Show.new.show_board(game.board)
-    while game.status == "on going"
-      game.turn
-      game.status = ""
-    end
+    #boucle qui compte nb tours de jeu et qui s'arrête si on arrive à 9 
+    #countdown = 0
+    #while countdown < 9
+      #puts ""
+      #countdown +=1
+    #while game.status == "on going"
+      #game.turn #boucle qui fait jouer les players l'un après l'autre /crée un prog
+      #game.status = ""  
+    #end
   end
 end

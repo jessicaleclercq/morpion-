@@ -1,4 +1,4 @@
-class Board
+class Board #ensemble qui représente 9 cases 
   attr_accessor :boardcase
 
   def initialize
@@ -11,6 +11,6 @@ class Board
     @boardcase << BoardCase.new("B3")
     @boardcase << BoardCase.new("C1")
     @boardcase << BoardCase.new("C2")
-    @boardcase << BoardCase.new("C3")
+    @boardcase << BoardCase.new("C3") 
   end
 end
